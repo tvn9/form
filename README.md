@@ -5,4 +5,4 @@ This project is to master Web Forms for more advance App Frontend and Backend de
 
 ## Form Example 1
 
-[Form 1](https://tvn9.github.io/form)
+[Form 1](https://tvn9.github.io/form/p1)
