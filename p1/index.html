@@ -19,18 +19,47 @@
         <div class="form">
           <form class="form-profile" action="" method="POST">
             <div class="form-row input-name">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <label class="form-profile-label" for="name">Name</label>
+              <input
+                class="form-profile-input"
+                type="text"
+                name="name"
+                id="name"
+              />
             </div>
             <div class="form-row input-email">
               <label for="email">E-mail</label>
               <input
+                class="form-profile-input"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="name@domain.com"
               />
             </div>
+            <fieldset class="form-radio">
+              <legend>Select your privacy options</legend>
+              <div class="form-radio-row">
+                <input
+                  class="radio-input"
+                  type="radio"
+                  name="privacy-type"
+                  id="privacy-type-1"
+                />
+                <label class="radio-label" for="public-type-1">Private</label>
+              </div>
+              <div class="form-radio-row">
+                <input
+                  class="radio-input"
+                  type="radio"
+                  name="privacy-type"
+                  id="privacy-type-2"
+                  value="yes"
+                  checked
+                />
+                <label class="radio-label" for="public-type-2">Public</label>
+              </div>
+            </fieldset>
           </form>
         </div>
       </div>

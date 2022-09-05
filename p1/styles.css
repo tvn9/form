@@ -5,20 +5,20 @@
   --container-background-color: #f7f7f7;
 
   /* Content Section */
-  --content-padding: 0px 20px;
+  --content-padding: 30px;
   --content-text-color: #222222;
   --box-shadow-main: 0 0.5rem 3rem #00000066;
 
   /* Idividual Components Section */
-  --item-maring-bottom: 10px;
+  --item-margin-bottom: 20px;
   --item-margin-right: 6px;
-  --item-margin-tb-20: 20px 0px;
-  --item-margin-tb-10: 10px 0px;
-  --item-margin-tb-7: 7px 0px;
+  --item-margin-bottom-20: 20px;
+  --item-margin-bottom-15: 10px;
+  --item-margin-bottom-7: 7px;
 
   --item-padding: 20px;
 
-  --widget-width: 250px;
+  --widget-width: 20rem;
 
   --item-border-radius: 10px;
 
@@ -78,31 +78,30 @@ body {
   padding: var(--item-padding);
   text-align: center;
   border-radius: var(--item-border-radius);
-  margin: var(--item-margin-tb-20);
+  margin-bottom: var(--item-margin-bottom);
 }
 
 /* Form Profile Section */
+
 .form-profile {
   background-color: #0b7285;
   color: #ffffff;
   padding: 20px;
   border-radius: var(--item-border-radius);
-  margin: var(--item-margin-tb-20);
 }
 
 .form-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* justify-content: flex-start; */
 }
 
 .form-profile label {
-  margin-right: var(--item-margin-r);
   width: var(--label-width);
 }
 
 .form-profile input {
-  margin: var(--item-margin-tb-7);
+  margin-bottom: var(--item-margin-bottom-15);
   padding: var(--input-padding);
   border-radius: var(--input-border-radius);
   border-style: var(--input-border-style);
@@ -110,7 +109,33 @@ body {
 }
 
 .form-profile input[type="email"]:invalid {
+  margin-bottom: var(--item-margin-bottom-15);
   border: 1px solid #ff4500;
   color: #ff4500;
   box-shadow: none;
+}
+
+/* Radio Button Section */
+.form-radio {
+  margin: 20px 0px 0px 0px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-radio-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-radio-row .radio-input {
+  margin: 10px 20px 0px 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.form-radio-row .radio-label {
+  margin: 10px 20px 0px 0px;
 }
