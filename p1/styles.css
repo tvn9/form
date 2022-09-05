@@ -1,0 +1,116 @@
+:root {
+  /* Container Section */
+  --container-padding: 20px;
+  --container-padding-lr: 20px 10%;
+  --container-background-color: #f7f7f7;
+
+  /* Content Section */
+  --content-padding: 0px 20px;
+  --content-text-color: #222222;
+  --box-shadow-main: 0 0.5rem 3rem #00000066;
+
+  /* Idividual Components Section */
+  --item-maring-bottom: 10px;
+  --item-margin-right: 6px;
+  --item-margin-tb-20: 20px 0px;
+  --item-margin-tb-10: 10px 0px;
+  --item-margin-tb-7: 7px 0px;
+
+  --item-padding: 20px;
+
+  --widget-width: 250px;
+
+  --item-border-radius: 10px;
+
+  /* Fonts Setting */
+  --font-family-main: Arial, Helvetica, sans-serif;
+  --font-size-main: 1rem;
+  --line-hight-main: 2rem;
+  --letter-space-main: 1px;
+
+  /* Site wide input setting */
+  --label-width: 5rem;
+  --input-form-height: 25px;
+  --input-border-radius: 5px;
+  --input-border-style: none;
+  --input-padding: 6px;
+  --input-width: 15rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color-main);
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
+  line-height: var(--line-hight-main);
+  letter-spacing: var(--letter-space-main);
+}
+
+/* Main Page Container */
+.container {
+  margin: auto;
+  height: 100vh;
+  padding: var(--container-padding);
+  padding: var(--container-padding-lr);
+  /* background-color: var(--background-color-main); */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form section */
+.content {
+  width: 100%;
+  padding: var(--content-padding);
+  box-shadow: var(--box-shadow-main);
+  border-radius: var(--item-border-radius);
+}
+
+.header-profile {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b7285;
+  color: #ffffff;
+  padding: var(--item-padding);
+  text-align: center;
+  border-radius: var(--item-border-radius);
+  margin: var(--item-margin-tb-20);
+}
+
+/* Form Profile Section */
+.form-profile {
+  background-color: #0b7285;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: var(--item-border-radius);
+  margin: var(--item-margin-tb-20);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-profile label {
+  margin-right: var(--item-margin-r);
+  width: var(--label-width);
+}
+
+.form-profile input {
+  margin: var(--item-margin-tb-7);
+  padding: var(--input-padding);
+  border-radius: var(--input-border-radius);
+  border-style: var(--input-border-style);
+  width: var(--input-width);
+}
+
+.form-profile input[type="email"]:invalid {
+  border: 1px solid #ff4500;
+  color: #ff4500;
+  box-shadow: none;
+}
