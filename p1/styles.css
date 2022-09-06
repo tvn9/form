@@ -78,16 +78,21 @@ body {
 .header-profile {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #0b7285;
   color: #ffffff;
   padding: var(--item-padding);
-  text-align: center;
   border-radius: var(--item-border-radius);
   margin-bottom: var(--item-margin-bottom);
 }
 
 /* Form Profile Section */
 .form-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
   width: 100%;
   background-color: #0b7285;
   color: #ffffff;
@@ -119,7 +124,6 @@ body {
 .form-row .input-checkbox {
   display: flext;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
   height: 18px;
   width: 18px;
@@ -143,7 +147,10 @@ body {
 .form-fieldset {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+  width: 25rem;
   border: none;
 }
 
@@ -164,12 +171,15 @@ body {
 .form-row .input-label {
   width: var(--label-width-6);
   height: 50px;
+  margin-right: var(--item-margin-right);
 }
 
 /* Bio Section */
 .bio {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
   width: var(--input-width-100);
   margin-bottom: var(--item-margin-bottom-20);
 }
@@ -203,6 +213,7 @@ body {
 
 .btn:hover {
   background-color: #40c057;
+  cursor: pointer;
 }
 
 .btn:active {
