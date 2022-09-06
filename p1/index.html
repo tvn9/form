@@ -18,28 +18,44 @@
         </div>
         <div class="form">
           <form class="form-profile" action="" method="POST">
-            <div class="form-row input-name">
-              <label class="form-profile-label" for="name">Name</label>
-              <input
-                class="form-profile-input"
-                type="text"
-                name="name"
-                id="name"
-              />
+            <!-- Adding user name and email address input fields -->
+            <div class="form-row">
+              <label class="name-label" for="fname">First name</label>
+              <input class="name-input" type="text" name="fname" id="fname" />
             </div>
-            <div class="form-row input-email">
-              <label for="email">E-mail</label>
+            <div class="form-row">
+              <label class="name-label" for="name">Last name</label>
+              <input class="name-input" type="text" name="lname" id="lname" />
+            </div>
+            <div class="form-row">
+              <label class="email-label" for="email">E-mail</label>
               <input
-                class="form-profile-input"
+                class="email-input"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="name@domain.com"
               />
             </div>
+
+            <!-- Adding checkbox input options -->
+            <div class="form-row">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                name="email-optin"
+                id="email-optin"
+                value="optin"
+              />
+              <label for="email-optin" class="checkbox-label"
+                ><span>Contact me via email</span></label
+              >
+            </div>
+
+            <!-- Adding radio button input fields -->
             <fieldset class="form-radio">
               <legend>Select your privacy options</legend>
-              <div class="form-radio-row">
+              <div class="form-row">
                 <input
                   class="radio-input"
                   type="radio"
@@ -48,7 +64,7 @@
                 />
                 <label class="radio-label" for="public-type-1">Private</label>
               </div>
-              <div class="form-radio-row">
+              <div class="form-row">
                 <input
                   class="radio-input"
                   type="radio"

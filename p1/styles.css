@@ -11,7 +11,8 @@
 
   /* Idividual Components Section */
   --item-margin-bottom: 20px;
-  --item-margin-right: 6px;
+  --item-margin-top: 20px;
+  --item-margin-right: 10px;
   --item-margin-bottom-20: 20px;
   --item-margin-bottom-15: 10px;
   --item-margin-bottom-7: 7px;
@@ -29,7 +30,8 @@
   --letter-space-main: 1px;
 
   /* Site wide input setting */
-  --label-width: 5rem;
+  --label-width: 6rem;
+  --checkbox-lebel-width: 20rem;
   --input-form-height: 25px;
   --input-border-radius: 5px;
   --input-border-style: none;
@@ -82,7 +84,6 @@ body {
 }
 
 /* Form Profile Section */
-
 .form-profile {
   background-color: #0b7285;
   color: #ffffff;
@@ -93,49 +94,63 @@ body {
 .form-row {
   display: flex;
   flex-direction: row;
-  /* justify-content: flex-start; */
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.form-profile label {
+.form-row .name-label,
+.form-row .email-label {
   width: var(--label-width);
 }
 
-.form-profile input {
-  margin-bottom: var(--item-margin-bottom-15);
+.form-row .name-input,
+.form-row .email-input {
+  margin-bottom: var(--item-margin-bottom-20);
   padding: var(--input-padding);
   border-radius: var(--input-border-radius);
   border-style: var(--input-border-style);
   width: var(--input-width);
 }
 
-.form-profile input[type="email"]:invalid {
+.form-row .email-input[type="email"]:invalid {
   margin-bottom: var(--item-margin-bottom-15);
   border: 1px solid #ff4500;
   color: #ff4500;
   box-shadow: none;
 }
 
+/* Checkbox section */
+.form-row .checkbox-input,
+.form-row .checkbox-label {
+  width: 20px;
+  height: 30px;
+  margin-top: var(--item-margin-top);
+  margin-right: var(--item-margin-right);
+}
+.form-row .checkbox-label {
+  width: var(--checkbox-lebel-width);
+}
+
 /* Radio Button Section */
 .form-radio {
-  margin: 20px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   border: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  margin-top: var(--item-margin-top);
+  margin-right: var(--item-margin-right);
 }
 
-.form-radio-row {
+.form-row .radio-input,
+.form-row .radio-label {
   display: flex;
-  flex-direction: row;
   align-items: center;
-}
-
-.form-radio-row .radio-input {
-  margin: 10px 20px 0px 0px;
   width: 20px;
-  height: 20px;
+  height: 30px;
+  margin: 10px 10px 20px 0px;
 }
 
-.form-radio-row .radio-label {
-  margin: 10px 20px 0px 0px;
+.form-row .radio-label {
+  width: var(--label-width);
 }
