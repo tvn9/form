@@ -20,17 +20,29 @@
           <form class="form-profile" action="" method="POST">
             <!-- Adding user name and email address input fields -->
             <div class="form-row">
-              <label class="name-label" for="fname">First name</label>
-              <input class="name-input" type="text" name="fname" id="fname" />
-            </div>
-            <div class="form-row">
-              <label class="name-label" for="name">Last name</label>
-              <input class="name-input" type="text" name="lname" id="lname" />
-            </div>
-            <div class="form-row">
-              <label class="email-label" for="email">E-mail</label>
+              <label class="input-label" for="fname">First name</label>
               <input
-                class="email-input"
+                class="input-name"
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="First name"
+              />
+            </div>
+            <div class="form-row">
+              <label class="input-label" for="lname">Last name</label>
+              <input
+                class="input-name"
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Last name"
+              />
+            </div>
+            <div class="form-row">
+              <label class="input-label" for="email">E-mail</label>
+              <input
+                class="input-email"
                 type="email"
                 name="email"
                 id="email"
@@ -39,41 +51,69 @@
             </div>
 
             <!-- Adding checkbox input options -->
+            <fieldset class="form-fieldset">
+              <legend>Contact me via</legend>
+              <div class="form-row">
+                <input
+                  class="input-checkbox"
+                  type="checkbox"
+                  name="email-optin"
+                  id="email-optin"
+                  value="optin"
+                  checked
+                />
+                <label for="email-optin" class="input-label">
+                  <span>E-mail</span>
+                </label>
+                <input
+                  class="input-checkbox"
+                  type="checkbox"
+                  name="email-optin"
+                  id="email-optin"
+                  value="optin"
+                />
+                <label for="email-optin" class="input-label">
+                  <span>Phone</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Adding industry drop down options -->
             <div class="form-row">
-              <input
-                class="checkbox-input"
-                type="checkbox"
-                name="email-optin"
-                id="email-optin"
-                value="optin"
-              />
-              <label for="email-optin" class="checkbox-label"
-                ><span>Contact me via email</span></label
-              >
+              <label class="input-label" for="industry">Job title</label>
+              <select class="input-dropdown" name="industry" id="industry">
+                <option value="select-one">Select a matching option</option>
+                <option value="web-developer">Web Developer</option>
+                <option value="software-developer">Software Developer</option>
+                <option value="test-engineer">Test Engineer</option>
+                <option value="data-analysit">Data Analysit</option>
+                <option value="data-scientist">Data Scientist</option>
+              </select>
             </div>
 
             <!-- Adding radio button input fields -->
-            <fieldset class="form-radio">
-              <legend>Select your privacy options</legend>
+            <fieldset class="form-fieldset">
+              <legend>Allow public to view your profile</legend>
               <div class="form-row">
                 <input
-                  class="radio-input"
+                  class="input-radio"
                   type="radio"
                   name="privacy-type"
                   id="privacy-type-1"
+                  value="no"
+                  checked
                 />
-                <label class="radio-label" for="public-type-1">Private</label>
+                <label class="input-label" for="public-type-1">Private</label>
               </div>
               <div class="form-row">
                 <input
-                  class="radio-input"
+                  class="input-radio"
                   type="radio"
                   name="privacy-type"
                   id="privacy-type-2"
                   value="yes"
-                  checked
                 />
-                <label class="radio-label" for="public-type-2">Public</label>
+                <label class="input-label" for="public-type-2">Public</label>
               </div>
             </fieldset>
           </form>
