@@ -96,7 +96,11 @@ body {
 }
 
 .form-row .input-name,
-.form-row .input-email {
+.form-row .input-email,
+.form-row .input-phone {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
   margin-bottom: var(--item-margin-bottom-20);
   padding: var(--input-padding);
   border-radius: var(--input-border-radius);
@@ -111,22 +115,27 @@ body {
   box-shadow: none;
 }
 
-/* Checkbox section */
+/* Checkbox section - Contact Option */
 .form-row .input-checkbox {
-  width: 20px;
-  height: 30px;
-  margin-top: -10px;
+  display: flext;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 18px;
+  width: 18px;
   margin-right: var(--item-margin-right);
-  margin-bottom: var(--item-margin-bottom-15);
+  margin-bottom: var(--item-margin-bottom-20);
 }
 
-/* Select Dropdown Section */
+/* Select Dropdown Section - Job Title */
 .form-row .input-dropdown {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
   width: var(--input-width);
   padding: var(--input-padding);
-  margin-top: -10px;
   margin-right: var(--item-margin-right);
-  margin-bottom: var(--item-margin-bottom-15);
+  margin-bottom: var(--item-margin-bottom-20);
   border-radius: var(--input-border-radius);
 }
 
@@ -135,7 +144,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /* align-items: center; */
   border: none;
 }
 
@@ -163,11 +171,12 @@ body {
   display: flex;
   flex-direction: column;
   width: var(--input-width-100);
+  margin-bottom: var(--item-margin-bottom-20);
 }
 
 .bio .input-textarea {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
   height: 8rem;
   padding: var(--input-padding);
