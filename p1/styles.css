@@ -182,3 +182,29 @@ body {
   padding: var(--input-padding);
   border-radius: var(--input-border-radius);
 }
+
+/* Update Button */
+.form-row .btn {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #2f9e44;
+  color: #ffffff;
+  height: 8rem;
+  padding: 10px 30px;
+  /* text-transform: uppercase; */
+  border: none;
+  height: 40px;
+  align-items: center;
+  border-radius: var(--input-border-radius);
+}
+
+.btn:hover {
+  background-color: #40c057;
+}
+
+.btn:active {
+  transform: translateY(3px);
+}
