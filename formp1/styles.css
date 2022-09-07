@@ -1,36 +1,38 @@
 :root {
-  /* Container Section */
+  /* ******* CONTAINER SETTING VARIABLES ******** */
   --container-padding: 20px;
-  --container-padding-lr: 20px 10%;
+  --container-padding-lr: 2rem 10%;
   --container-background-color: #f7f7f7;
 
-  /* Content Section */
-  --content-padding: 30px;
+  /* ******* CONTENT SETTING VARIABLES ******** */
+  --content-padding: 3rem;
   --content-text-color: #222222;
   --box-shadow-main: 0 0.5rem 3rem #00000066;
 
-  /* Idividual Components Section */
+  /* ******* WEB COMPONENTS VARIABLES ******** */
   --item-margin-bottom: 20px;
   --item-margin-top-20: 20px;
   --item-margin-top-30: 30px;
   --item-margin-right: 15px;
   --item-margin-bottom-20: 20px;
+  --item-margin-bootom-2r: 2rem;
   --item-margin-bottom-15: 10px;
   --item-margin-bottom-7: 7px;
 
   --item-padding: 20px;
 
   --widget-width: 20rem;
+  --widget-width-26: 26rem;
 
   --item-border-radius: 10px;
 
-  /* Fonts Setting */
+  /* ******* FONTS VARIABLES ******** */
   --font-family-main: Arial, Helvetica, sans-serif;
   --font-size-main: 1rem;
   --line-hight-main: 2rem;
   --letter-space-main: 1px;
 
-  /* Site wide input setting */
+  /* ******* LABELS and INPUT FORM VARIABLES ******** */
   --label-width-6: 6rem;
   --label-width-10: 10rem;
   --checkbox-lebel-width: 20rem;
@@ -56,7 +58,7 @@ body {
   letter-spacing: var(--letter-space-main);
 }
 
-/* Main Page Container */
+/* ******* CONTAINER SECTIONS ******** */
 .container {
   margin: auto;
   height: 100vh;
@@ -67,7 +69,7 @@ body {
   flex-direction: column;
 }
 
-/* Form section */
+/* ******* CONTENT BOX ******** */
 .content {
   width: 100%;
   padding: var(--content-padding);
@@ -75,6 +77,7 @@ body {
   border-radius: var(--item-border-radius);
 }
 
+/* ******* PROFILE HEADER ******** */
 .header-profile {
   display: flex;
   flex-direction: column;
@@ -87,7 +90,7 @@ body {
   margin-bottom: var(--item-margin-bottom);
 }
 
-/* Form Profile Section */
+/* ******* PROFILE NAME, EMAIL, PHONE ******** */
 .form-profile {
   display: flex;
   flex-direction: column;
@@ -96,7 +99,7 @@ body {
   width: 100%;
   background-color: #0b7285;
   color: #ffffff;
-  padding: 20px;
+  padding: var(--content-padding);
   border-radius: var(--item-border-radius);
 }
 
@@ -120,9 +123,9 @@ body {
   box-shadow: none;
 }
 
-/* Checkbox section - Contact Option */
+/* ******* CONTACT OPTION CHECKBOX ******** */
 .form-row .input-checkbox {
-  display: flext;
+  display: flex;
   flex-direction: row;
   align-items: center;
   height: 18px;
@@ -131,7 +134,14 @@ body {
   margin-bottom: var(--item-margin-bottom-20);
 }
 
-/* Select Dropdown Section - Job Title */
+/* ******* JOB TITLE DROP DOWN ******** */
+.job-title {
+  width: 23rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .form-row .input-dropdown {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
@@ -143,7 +153,26 @@ body {
   border-radius: var(--input-border-radius);
 }
 
-/* Radio Button Section */
+/* ******* YOUR BIO SECTION ******** */
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  width: var(--input-width-100);
+  margin-bottom: var(--item-margin-bottom-20);
+}
+
+.bio .input-textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  height: 8rem;
+  padding: var(--input-padding);
+  border-radius: var(--input-border-radius);
+}
+
+/* ******* RADIO PROFILE PRIVATE OPTION ******** */
 .form-fieldset {
   display: flex;
   flex-direction: row;
@@ -152,6 +181,7 @@ body {
   text-align: left;
   width: 25rem;
   border: none;
+  margin-bottom: var(--item-margin-bottom-15);
 }
 
 .form-row .input-radio {
@@ -174,26 +204,7 @@ body {
   margin-right: var(--item-margin-right);
 }
 
-/* Bio Section */
-.bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  width: var(--input-width-100);
-  margin-bottom: var(--item-margin-bottom-20);
-}
-
-.bio .input-textarea {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-  height: 8rem;
-  padding: var(--input-padding);
-  border-radius: var(--input-border-radius);
-}
-
-/* Update Button */
+/* ******* UPDATE BUTTON ******** */
 .form-row .btn {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
@@ -212,7 +223,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #40c057;
+  background-color: #37b24d;
   cursor: pointer;
 }
 
